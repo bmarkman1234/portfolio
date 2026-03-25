@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruce Markman | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Bruce Markman</h1>
+    <p>Remote Sensing & Landscape Ecology | GIS | Data Science</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Bruce, a remote sensing and landscape ecology enthusiast with experience in GIS, UAV LiDAR, and spatial modeling. I’m passionate about using technology to monitor and manage ecosystems effectively.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+
+      <div class="project-card">
+        <div class="project-img">
+          <img src="images/grassland.png" alt="Grassland Biomass Mapping">
+        </div>
+        <div class="project-info">
+          <h3>Grassland Biomass Mapping</h3>
+          <p>Using UAV LiDAR and imaging spectroscopy to estimate biomass and canopy structure across grasslands.</p>
+          <a href="#" class="project-link">View Repo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <img src="images/rdm.png" alt="RDM Modeling">
+        </div>
+        <div class="project-info">
+          <h3>RDM Modeling</h3>
+          <p>Modeling Residual Dry Matter in grazing lands with environmental and remote sensing predictors.</p>
+          <a href="#" class="project-link">View Repo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <img src="images/webapp.png" alt="GIS Web App">
+        </div>
+        <div class="project-info">
+          <h3>GIS Web App</h3>
+          <p>Interactive mapping of environmental data for urban planning and conservation.</p>
+          <a href="#" class="project-link">View Repo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Remote Sensing (UAV LiDAR, Imaging Spectroscopy)</li>
+      <li>GIS (ArcGIS, QGIS, Web Mapping)</li>
+      <li>Programming (Python, R, JavaScript)</li>
+      <li>Data Analysis & Modeling (GLMM, Random Forest, Spatial Analysis)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedin">linkedin.com/in/yourlinkedin</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Bruce Markman</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
