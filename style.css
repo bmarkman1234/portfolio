@@ -161,49 +161,24 @@ p {
   padding: 1.4rem;
 }
 
-.timeline {
-  position: relative;
+.about-layout {
   display: grid;
-  gap: 1.2rem;
-  padding-left: 2rem;
+  grid-template-columns: minmax(180px, 230px) 1fr;
+  gap: 1.25rem;
+  align-items: start;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 0.52rem;
-  top: 0.2rem;
-  bottom: 0.2rem;
-  width: 1px;
-  background: var(--line);
+.headshot {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  background: #ecece8;
 }
 
-.timeline-item {
-  position: relative;
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: -1.7rem;
-  top: 0.45rem;
-  width: 0.75rem;
-  height: 0.75rem;
-  background: var(--text);
-  border-radius: 50%;
-}
-
-.timeline-year {
-  color: var(--text);
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 0.45rem;
-}
-
-.timeline-panel {
+.about-copy {
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .list {
@@ -215,6 +190,60 @@ p {
 .list strong {
   color: var(--text);
   font-weight: 400;
+}
+
+.resume-section h3 {
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-size: 1.08rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.resume-item + .resume-item {
+  margin-top: 1.35rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid #ecece8;
+}
+
+.resume-item-title {
+  color: var(--text);
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.resume-item-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+}
+
+.resume-contact {
+  font-size: 0.95rem;
+}
+
+.resume-section .list {
+  gap: 0.65rem;
+}
+
+.resume-section .list li {
+  line-height: 1.7;
+}
+
+.resume-link {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.resume-link:hover,
+.resume-link:focus-visible {
+  border-bottom-color: var(--text);
+}
+
+.print-actions {
+  margin-top: 1rem;
 }
 
 .project-grid {
@@ -346,12 +375,73 @@ p {
     align-items: flex-start;
   }
 
-  .timeline {
-    padding-left: 1.65rem;
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-email {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-email:hover,
+.footer-email:focus-visible {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+@media print {
+  body {
+    background: #ffffff;
+    color: #000000;
+    font-family: "Times New Roman", Georgia, serif;
   }
 
-  .timeline-item::before {
-    left: -1.35rem;
+  .site-header,
+  .site-footer,
+  .print-actions,
+  .eyebrow {
+    display: none !important;
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-grid {
+    gap: 1rem;
+  }
+
+  .panel {
+    border: 0;
+    padding: 0;
+    break-inside: avoid;
+  }
+
+  h2 {
+    margin-bottom: 0.7rem;
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .resume-item + .resume-item {
+    margin-top: 0.7rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  .resume-link {
+    border-bottom: 0;
+    color: #000000;
+    text-decoration: none;
   }
 }
 
