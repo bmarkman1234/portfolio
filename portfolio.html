@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bruce Markman | Home</title>
+  <title>Bruce Markman | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,23 +11,39 @@
     <div class="site-shell header-content">
       <a class="brand" href="index.html">Bruce Markman</a>
       <nav class="nav-links" aria-label="Primary">
-        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="about.html">About Me</a>
         <a class="nav-link" href="resume.html">Resume</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link active" href="portfolio.html">Portfolio</a>
         <a class="nav-link" href="photography.html">Photography</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <p class="eyebrow">Remote Sensing + Spatial Analysis</p>
-      <h1>Minimal systems for meaningful environmental insight.</h1>
-      <p>I am Bruce Markman, focused on landscape ecology, geospatial modeling, and practical data products that support ecosystem management decisions.</p>
-      <div class="actions">
-        <a class="button" href="portfolio.html">View Portfolio</a>
-        <a class="button" href="resume.html">See Resume</a>
+    <section class="content-grid">
+      <div>
+        <p class="eyebrow">Portfolio</p>
+        <h2>Selected projects.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Grassland Biomass Mapping</h3>
+          <p>UAV LiDAR and imaging spectroscopy for biomass and canopy structure estimation across managed rangelands.</p>
+          <a class="project-link" href="#">View Repo</a>
+        </article>
+
+        <article class="project-card">
+          <h3>RDM Modeling</h3>
+          <p>Residual dry matter predictions built from environmental predictors and remote sensing data.</p>
+          <a class="project-link" href="#">View Repo</a>
+        </article>
+
+        <article class="project-card">
+          <h3>GIS Web App</h3>
+          <p>Interactive environmental mapping experience designed for planning, outreach, and conservation workflows.</p>
+          <a class="project-link" href="#">View Repo</a>
+        </article>
       </div>
     </section>
   </main>
