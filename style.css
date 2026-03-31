@@ -20,6 +20,10 @@
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: 'MonoLisa', 'SFMono-Regular', Menlo, Monaco, Consolas, 'Courier New', monospace;
   background: linear-gradient(180deg, #f7f7f5 0%, var(--bg) 100%);
@@ -539,5 +543,32 @@ p {
   .resume-open-link {
     text-align: left;
     font-size: 1rem;
+  }
+
+  .portfolio-page main {
+    width: 100%;
+    padding: 2.2rem 0.65rem 2rem;
+  }
+
+  .portfolio-page .content-grid {
+    gap: 0.9rem;
+  }
+
+  .portfolio-page .project-row,
+  .portfolio-page .project-shot,
+  .portfolio-page .project-card,
+  .portfolio-page .map-feature-card {
+    min-width: 0;
+  }
+
+  .portfolio-page .project-shot img {
+    height: clamp(150px, 48vw, 210px);
+  }
+
+  .portfolio-page .project-card p,
+  .portfolio-page .featured-media p,
+  .portfolio-page .map-feature-card figcaption {
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 }
