@@ -12,7 +12,6 @@
       <a class="brand" href="index.html">Bruce Markman</a>
       <nav class="nav-links" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About Me</a>
         <a class="nav-link" href="resume.html">Resume</a>
         <a class="nav-link active" href="portfolio.html">Portfolio</a>
         <a class="nav-link" href="photography.html">Photography</a>
@@ -25,40 +24,112 @@
       <div>
         <p class="eyebrow">Portfolio</p>
         <h2>Selected projects.</h2>
+        <p>Interactive projects are featured first, followed by point cloud media and map products.</p>
       </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Grassland Biomass Mapping</h3>
-          <p>UAV LiDAR and imaging spectroscopy for biomass and canopy structure estimation across managed rangelands.</p>
-          <a class="project-link" href="#">View Repo</a>
+
+      <section class="project-showcase" aria-label="Featured interactive projects">
+        <article class="project-row panel">
+          <figure class="project-shot">
+            <img src="portfolio%20maps/screenshots_for_featured/Graphical%20Abstract%20-%20RS%20of%20RDM%20Paper.png" alt="Remote Sensing of Residual Dry Matter screenshot">
+          </figure>
+          <div class="project-card">
+            <h3>Remote Sensing of Residual Dry Matter</h3>
+            <p>UAV LiDAR and field spectroscopy workflow for estimating residual dry matter across California conservation grazing lands.</p>
+            <a class="project-link" href="https://doi.org/10.3390/rs17142352" target="_blank" rel="noreferrer">View Manuscript</a>
+            <a class="project-link" href="https://github.com/bmarkman1234/Remote-Sensing-of-Residual-Dry-Matter" target="_blank" rel="noreferrer">View Repo</a>
+          </div>
         </article>
 
-        <article class="project-card">
-          <h3>RDM Modeling</h3>
-          <p>Residual dry matter predictions built from environmental predictors and remote sensing data.</p>
-          <a class="project-link" href="#">View Repo</a>
+        <article class="project-row panel">
+          <figure class="project-shot">
+            <img src="portfolio%20maps/screenshots_for_featured/walkability_map.png" alt="WalkSD project screenshot">
+          </figure>
+          <div class="project-card">
+            <h3>WalkSD</h3>
+            <p>An interactive mapping app focused on walkability and neighborhood access patterns for planning and public-facing exploration.</p>
+            <a class="project-link" href="https://bmarkman1234.github.io/walkSD/" target="_blank" rel="noreferrer">View App</a>
+            <a class="project-link" href="https://github.com/bmarkman1234/WalkSD" target="_blank" rel="noreferrer">View Repo</a>
+          </div>
         </article>
 
-        <article class="project-card">
-          <h3>GIS Web App</h3>
-          <p>Interactive environmental mapping experience designed for planning, outreach, and conservation workflows.</p>
-          <a class="project-link" href="#">View Repo</a>
+        <article class="project-row panel">
+          <figure class="project-shot">
+            <img src="portfolio%20maps/screenshots_for_featured/Index_Viewer_Example.png" alt="IndexViewer project screenshot">
+          </figure>
+          <div class="project-card">
+            <h3>IndexViewer</h3>
+            <p>A lightweight interface for viewing and comparing spatial indices so environmental trends can be interpreted quickly and clearly.</p>
+            <a class="project-link" href="https://bmarkman1234.github.io/IndexViewer/" target="_blank" rel="noreferrer">View App</a>
+            <a class="project-link" href="https://github.com/bmarkman1234/IndexViewer" target="_blank" rel="noreferrer">View Repo</a>
+          </div>
         </article>
-      </div>
+      </section>
+
+      <section class="panel featured-media" aria-label="Featured point cloud media">
+        <h3>Featured Point Cloud</h3>
+        <p>Example of high-density point cloud visualization used for remote sensing analysis and communication.</p>
+        <iframe class="featured-video" src="https://drive.google.com/file/d/1UmWCXFGlg045rsxGuxukkRGc4PZ9J44o/preview" title="Point cloud viewer" allow="autoplay" loading="lazy"></iframe>
+      </section>
+
+      <section class="panel map-feature-panel" aria-label="Map gallery">
+        <h3>Map Gallery</h3>
+        <p>Selected maps and visual products from the portfolio collection.</p>
+        <div class="map-feature-grid">
+          <figure class="map-feature-card">
+            <a class="map-feature-link" href="portfolio%20maps/dsm_dtm_composite.png" data-map-viewer>
+              <img src="portfolio%20maps/dsm_dtm_composite.png" alt="DSM and DTM composite map">
+            </a>
+            <figcaption>DSM/DTM Composite</figcaption>
+          </figure>
+          <figure class="map-feature-card">
+            <a class="map-feature-link" href="portfolio%20maps/FireSenseLayout_Temp.jpg" data-map-viewer>
+              <img src="portfolio%20maps/FireSenseLayout_Temp.jpg" alt="FireSense layout map">
+            </a>
+            <figcaption>FireSense Layout</figcaption>
+          </figure>
+          <figure class="map-feature-card">
+            <a class="map-feature-link" href="portfolio%20maps/Commercial%20UAV%20Expo%20RDM%20Poster%208.5x11_.jpg" data-map-viewer>
+              <img src="portfolio%20maps/Commercial%20UAV%20Expo%20RDM%20Poster%208.5x11_.jpg" alt="Commercial UAV Expo residual dry matter poster">
+            </a>
+            <figcaption>RDM Poster</figcaption>
+          </figure>
+          <figure class="map-feature-card">
+            <a class="map-feature-link" href="portfolio%20maps/screenshots_for_featured/map_rain_sun_relief.png" data-map-viewer>
+              <img src="portfolio%20maps/screenshots_for_featured/map_rain_sun_relief.png" alt="Relief map with rain and sun symbology">
+            </a>
+            <figcaption>Rain + Sun Relief</figcaption>
+          </figure>
+        </div>
+      </section>
     </section>
   </main>
+
+  <div class="map-modal" id="map-modal" hidden>
+    <button class="map-modal-close" type="button" aria-label="Close map viewer">Close</button>
+    <img class="map-modal-image" id="map-modal-image" alt="Expanded map view">
+  </div>
 
   <footer class="site-footer">
     <div class="footer-content">
       <p class="small">&copy; 2026 Bruce Markman</p>
-      <p class="small"><a class="footer-email" href="mailto:bmarkman1234@gmail.com">bmarkman1234@gmail.com</a></p>
-      <div class="social-links">
+<div class="social-links">
         <a class="social-link" href="https://github.com/bmarkman1234" target="_blank" rel="noreferrer" aria-label="GitHub profile"><img class="social-icon" src="icons/github.svg" alt="GitHub"></a>
         <a class="social-link" href="https://www.linkedin.com/in/bruce-markman-b74a611ab/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><img class="social-icon" src="icons/linkedin.svg" alt="LinkedIn"></a>
-        <a class="social-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=bmarkman1234@gmail.com" target="_blank" rel="noreferrer" aria-label="Send email in browser"><img class="social-icon" src="icons/email.svg" alt="Send email"></a>      </div>
+        <a class="social-link" href="https://www.flickr.com/photos/brucemarkman/" target="_blank" rel="noreferrer" aria-label="Flickr profile"><img class="social-icon" src="icons/flickr.svg" alt="Flickr"></a>
+        <a class="social-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=bmarkman1234@gmail.com" target="_blank" rel="noreferrer" aria-label="Send email in browser"><img class="social-icon" src="icons/email.svg" alt="Send email"></a>
+      </div>
     </div>
-  </footer></body>
+  </footer>
+  <script src="portfolio-map-viewer.js"></script>
+</body>
 </html>
+
+
+
+
+
+
+
 
 
 

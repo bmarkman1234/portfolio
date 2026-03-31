@@ -12,7 +12,6 @@
       <a class="brand" href="index.html">Bruce Markman</a>
       <nav class="nav-links" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About Me</a>
         <a class="nav-link" href="resume.html">Resume</a>
         <a class="nav-link" href="portfolio.html">Portfolio</a>
         <a class="nav-link active" href="photography.html">Photography</a>
@@ -25,34 +24,51 @@
       <div>
         <p class="eyebrow">Photography</p>
         <h2>Nature and landscape gallery.</h2>
-        <p>Photography is a core creative practice for me. I focus on natural light, open spaces, and ecological texture across the landscapes I explore.</p>
+        <p>Photography is a core creative practice for me. This featured carousel highlights landscape and wildlife images from my field and travel work.</p>
       </div>
 
-      <section class="photo-gallery" aria-label="Nature and landscape photos">
-        <figure class="photo-card">
-          <img src="photos\photography_portfolio\allens_humming.jpg">
-          <figcaption>Ridgeline Light</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="photos\photography_portfolio\landscape_poway.jpg">
-          <figcaption>Evening Hills</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="photos\photography_portfolio\tree_swallows.jpg">
-          <figcaption>Forest Layers</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="photos\photography_portfolio\torrey_pines.jpg">
-          <figcaption>River Curve</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="photos/landscape-05.svg">
-          <figcaption>Coastal Horizon</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="photos/landscape-06.svg">
-          <figcaption>Desert Quiet</figcaption>
-        </figure>
+      <section class="panel carousel-panel" aria-label="Featured photography carousel">
+        <div class="photo-carousel" data-carousel>
+          <button class="carousel-button" type="button" data-prev aria-label="Previous photo">&#10094;</button>
+          <figure class="carousel-frame">
+            <img id="carousel-image" src="photos/photography_portfolio/berryessa.jpg" alt="Landscape view at Lake Berryessa">
+            <figcaption id="carousel-caption">Lake Berryessa</figcaption>
+          </figure>
+          <button class="carousel-button" type="button" data-next aria-label="Next photo">&#10095;</button>
+        </div>
+
+        <div class="carousel-thumbs" aria-label="Photo selection">
+          <button class="thumb is-active" type="button" data-src="photos/photography_portfolio/berryessa.jpg" data-alt="Landscape view at Lake Berryessa" data-caption="Lake Berryessa">
+            <img src="photos/photography_portfolio/berryessa.jpg" alt="Lake Berryessa thumbnail">
+          </button>
+          <button class="thumb" type="button" data-src="photos/photography_portfolio/grand_canyon.jpg" data-alt="Grand Canyon landscape at golden hour" data-caption="Grand Canyon">
+            <img src="photos/photography_portfolio/grand_canyon.jpg" alt="Grand Canyon thumbnail">
+          </button>
+          <button class="thumb" type="button" data-src="photos/photography_portfolio/landscape_joshua_tree.jpg" data-alt="Joshua Tree landscape scene" data-caption="Joshua Tree">
+            <img src="photos/photography_portfolio/landscape_joshua_tree.jpg" alt="Joshua Tree thumbnail">
+          </button>
+          <button class="thumb" type="button" data-src="photos/photography_portfolio/landscape_poway.jpg" data-alt="Poway hills and grassland landscape" data-caption="Poway Landscape">
+            <img src="photos/photography_portfolio/landscape_poway.jpg" alt="Poway landscape thumbnail">
+          </button>
+          <button class="thumb" type="button" data-src="photos/photography_portfolio/landscape_ramonagrasslands.jpg" data-alt="Ramona grasslands landscape" data-caption="Ramona Grasslands">
+            <img src="photos/photography_portfolio/landscape_ramonagrasslands.jpg" alt="Ramona grasslands thumbnail">
+          </button>
+          <button class="thumb" type="button" data-src="photos/photography_portfolio/milky_way.jpg" data-alt="Milky Way night sky above landscape" data-caption="Milky Way">
+            <img src="photos/photography_portfolio/milky_way.jpg" alt="Milky Way thumbnail">
+          </button>
+          <button class="thumb" type="button" data-src="photos/photography_portfolio/surf_blacks.jpg" data-alt="Surf scene at Black's Beach" data-caption="Surf at Black's">
+            <img src="photos/photography_portfolio/surf_blacks.jpg" alt="Surf thumbnail">
+          </button>
+          <button class="thumb" type="button" data-src="photos/photography_portfolio/torrey_pines.jpg" data-alt="Torrey Pines coastal landscape" data-caption="Torrey Pines">
+            <img src="photos/photography_portfolio/torrey_pines.jpg" alt="Torrey Pines thumbnail">
+          </button>
+          <button class="thumb" type="button" data-src="photos/photography_portfolio/allens_humming.jpg" data-alt="Allen's hummingbird portrait" data-caption="Allen's Hummingbird">
+            <img src="photos/photography_portfolio/allens_humming.jpg" alt="Allen's hummingbird thumbnail">
+          </button>
+          <button class="thumb" type="button" data-src="photos/photography_portfolio/yellow_billedMagpie.jpg" data-alt="Yellow-billed magpie on branch" data-caption="Yellow-billed Magpie">
+            <img src="photos/photography_portfolio/yellow_billedMagpie.jpg" alt="Yellow-billed magpie thumbnail">
+          </button>
+        </div>
       </section>
     </section>
   </main>
@@ -60,13 +76,17 @@
   <footer class="site-footer">
     <div class="footer-content">
       <p class="small">&copy; 2026 Bruce Markman</p>
-      <p class="small"><a class="footer-email" href="mailto:bmarkman1234@gmail.com">bmarkman1234@gmail.com</a></p>
-      <div class="social-links">
+<div class="social-links">
         <a class="social-link" href="https://github.com/bmarkman1234" target="_blank" rel="noreferrer" aria-label="GitHub profile"><img class="social-icon" src="icons/github.svg" alt="GitHub"></a>
         <a class="social-link" href="https://www.linkedin.com/in/bruce-markman-b74a611ab/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><img class="social-icon" src="icons/linkedin.svg" alt="LinkedIn"></a>
-        <a class="social-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=bmarkman1234@gmail.com" target="_blank" rel="noreferrer" aria-label="Send email in browser"><img class="social-icon" src="icons/email.svg" alt="Send email"></a>      </div>
+        <a class="social-link" href="https://www.flickr.com/photos/brucemarkman/" target="_blank" rel="noreferrer" aria-label="Flickr profile"><img class="social-icon" src="icons/flickr.svg" alt="Flickr"></a>
+        <a class="social-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=bmarkman1234@gmail.com" target="_blank" rel="noreferrer" aria-label="Send email in browser"><img class="social-icon" src="icons/email.svg" alt="Send email"></a>
+      </div>
     </div>
-  </footer></body>
+  </footer>
+
+  <script src="photography-carousel.js"></script>
+</body>
 </html>
 
 
