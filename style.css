@@ -261,6 +261,10 @@ p {
   background: #e9e9e5;
 }
 
+.featured-video-mobile-link {
+  display: none;
+}
+
 .map-feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -516,6 +520,14 @@ p {
 
   .featured-video {
     height: clamp(220px, 58vw, 340px);
+  }
+
+  .featured-video {
+    display: none;
+  }
+
+  .featured-video-mobile-link {
+    display: inline-block;
   }
 
   .resume-mobile-only {
