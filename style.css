@@ -201,6 +201,10 @@ p {
   text-align: right;
 }
 
+.resume-mobile-only {
+  display: none;
+}
+
 .project-showcase {
   display: grid;
   gap: 1rem;
@@ -497,15 +501,21 @@ p {
   }
 
   .resume-embed {
-    min-height: 520px;
-    height: 72vh;
+    display: none;
   }
 
   .featured-video {
     height: clamp(260px, 62vw, 420px);
   }
 
+  .resume-mobile-only {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
   .resume-open-link {
     text-align: left;
+    font-size: 1rem;
   }
 }
