@@ -191,7 +191,8 @@ p {
 
 .resume-embed {
   width: 100%;
-  height: clamp(700px, 82vh, 1200px);
+  min-height: 760px;
+  height: clamp(760px, 86vh, 1200px);
   border: 1px solid var(--line);
   background: #ffffff;
 }
@@ -221,7 +222,7 @@ p {
 
 .project-shot img {
   width: 100%;
-  height: 220px;
+  height: 180px;
   object-fit: cover;
   display: block;
 }
@@ -246,8 +247,8 @@ p {
 
 .featured-video {
   width: 100%;
-  height: clamp(320px, 52vw, 760px);
-  max-height: 78vh;
+  height: clamp(280px, 42vw, 520px);
+  max-height: 70vh;
   display: block;
   border: 1px solid var(--line);
   background: #e9e9e5;
@@ -354,7 +355,7 @@ p {
 
 .carousel-frame img {
   width: 100%;
-  height: clamp(330px, 56vh, 560px);
+  height: clamp(240px, 40vw, 420px);
   object-fit: contain;
   display: block;
   background: #e5e5e1;
@@ -496,11 +497,12 @@ p {
   }
 
   .resume-embed {
-    height: 78vh;
+    min-height: 520px;
+    height: 72vh;
   }
 
   .featured-video {
-    height: clamp(300px, 70vw, 520px);
+    height: clamp(260px, 62vw, 420px);
   }
 
   .resume-open-link {
