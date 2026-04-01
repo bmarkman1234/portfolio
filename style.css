@@ -519,7 +519,9 @@ p {
   }
 
   .resume-embed {
-    display: none;
+    display: block;
+    min-height: 520px;
+    height: 72vh;
   }
 
   .featured-video {
@@ -531,9 +533,7 @@ p {
   }
 
   .resume-mobile-only {
-    display: block;
-    font-size: 0.9rem;
-    color: var(--muted);
+    display: none;
   }
 
   .resume-open-link {
