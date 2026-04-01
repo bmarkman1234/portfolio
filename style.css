@@ -195,20 +195,21 @@ p {
   gap: 0.7rem;
 }
 
-.resume-embed {
+.resume-embed-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.resume-embed-page {
   width: 100%;
-  min-height: 760px;
-  height: clamp(760px, 86vh, 1200px);
+  height: clamp(340px, 52vh, 500px);
   border: 1px solid var(--line);
   background: #ffffff;
 }
 
 .resume-open-link {
   text-align: right;
-}
-
-.resume-mobile-only {
-  display: none;
 }
 
 .project-showcase {
@@ -518,10 +519,12 @@ p {
     text-align: center;
   }
 
-  .resume-embed {
-    display: block;
-    min-height: 520px;
-    height: 72vh;
+  .resume-embed-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-embed-page {
+    height: clamp(300px, 46vh, 420px);
   }
 
   .featured-video {
@@ -529,10 +532,6 @@ p {
   }
 
   .featured-video-mobile-link {
-    display: none;
-  }
-
-  .resume-mobile-only {
     display: none;
   }
 
