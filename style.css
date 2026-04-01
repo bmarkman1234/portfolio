@@ -520,11 +520,7 @@ p {
   }
 
   .resume-embed-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .resume-embed-page {
-    height: clamp(300px, 46vh, 420px);
+    display: none;
   }
 
   .featured-video {
