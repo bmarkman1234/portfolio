@@ -526,12 +526,8 @@ p {
     height: clamp(220px, 58vw, 340px);
   }
 
-  .featured-video {
-    display: none;
-  }
-
   .featured-video-mobile-link {
-    display: inline-block;
+    display: none;
   }
 
   .resume-mobile-only {
