@@ -195,15 +195,10 @@ p {
   gap: 0.7rem;
 }
 
-.resume-embed-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.7rem;
-}
-
-.resume-embed-page {
+.resume-embed {
   width: 100%;
-  height: clamp(340px, 52vh, 500px);
+  min-height: 620px;
+  height: clamp(620px, 80vh, 900px);
   border: 1px solid var(--line);
   background: #ffffff;
 }
@@ -519,8 +514,10 @@ p {
     text-align: center;
   }
 
-  .resume-embed-grid {
-    display: none;
+  .resume-embed {
+    display: block;
+    min-height: 460px;
+    height: 68vh;
   }
 
   .featured-video {
