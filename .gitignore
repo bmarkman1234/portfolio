@@ -1,0 +1,3 @@
+# Living Word resume - kept local, only the PDF is published
+resume/*.docx
+~$*.docx
