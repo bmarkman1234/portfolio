@@ -249,6 +249,12 @@ p {
   color: var(--muted);
 }
 
+.resume-awards ul,
+.resume-languages ul {
+  display: grid;
+  gap: 0.35rem;
+}
+
 .resume-section li + li {
   margin-top: 0.35rem;
 }
