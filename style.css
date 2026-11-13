@@ -215,7 +215,7 @@ p {
 }
 
 .resume-summary {
-  max-width: 70ch;
+  max-width: none;
 }
 
 .resume-entry {
