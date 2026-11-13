@@ -194,20 +194,68 @@ p {
   border-bottom-color: var(--text);
 }
 
-.resume-embed-wrap {
+.resume-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.resume-heading,
+.resume-section {
   display: grid;
-  gap: 0.7rem;
+  gap: 0.8rem;
 }
 
-.resume-embed {
-  width: 100%;
-  min-height: 620px;
-  height: clamp(620px, 80vh, 900px);
-  border: 1px solid var(--line);
-  background: #ffffff;
+.resume-heading h1 {
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
 }
 
-.resume-open-link {
+.resume-heading a,
+.resume-entry a {
+  color: var(--text);
+}
+
+.resume-summary {
+  max-width: 70ch;
+}
+
+.resume-entry {
+  display: grid;
+  gap: 0.45rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
+}
+
+.resume-entry-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.resume-entry-heading span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  text-align: right;
+}
+
+.resume-section ul {
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.resume-section li + li {
+  margin-top: 0.35rem;
+}
+
+.resume-section p {
+  font-size: 0.94rem;
+}
+
+.resume-extras {
+  grid-template-columns: 1.4fr 0.6fr;
+}
+
+.resume-download {
   text-align: right;
 }
 
@@ -518,10 +566,6 @@ p {
     text-align: center;
   }
 
-  .resume-embed {
-    display: none;
-  }
-
   .featured-video {
     height: clamp(220px, 58vw, 340px);
   }
@@ -530,9 +574,21 @@ p {
     display: none;
   }
 
-  .resume-open-link {
+  .resume-entry-heading {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .resume-entry-heading span {
     text-align: left;
-    font-size: 1rem;
+  }
+
+  .resume-extras {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-download {
+    text-align: left;
   }
 
   .portfolio-page main {

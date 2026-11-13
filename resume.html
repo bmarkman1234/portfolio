@@ -13,22 +13,90 @@
       <nav class="nav-links" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link active" href="resume.html">Resume</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="portfolio.html">Projects</a>
         <a class="nav-link" href="photography.html">Photography</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="resume-embed-wrap" aria-label="Embedded resume PDF">
-      <iframe
-        class="resume-embed"
-        src="resume/markman_resume_2026.pdf#view=FitH"
-        title="Bruce Markman Resume PDF"
-      ></iframe>
-      <p class="small resume-open-link">
-        <a class="resume-link" href="resume/markman_resume_2026.pdf" target="_blank" rel="noreferrer" download>Download resume PDF</a>.
-      </p>
+    <section class="content-grid resume-content">
+      <header class="resume-heading">
+        <p class="eyebrow">Resume</p>
+        <h1>Bruce Markman</h1>
+        <p><a href="mailto:bmarkman1234@gmail.com">bmarkman1234@gmail.com</a> · (858) 342-2386 · <a href="https://bmarkman1234.github.io/portfolio/">Portfolio</a></p>
+        <p class="resume-summary">Solutions engineer who leads wildfire risk modeling projects from scoping through delivery, engineers custom tools for sales and model development, and guides clients from fire modeling results to mitigation decisions.</p>
+      </header>
+
+      <section class="panel resume-section">
+        <h2>Professional Experience</h2>
+        <article class="resume-entry">
+          <div class="resume-entry-heading"><h3>Solutions Engineer · Xyloplan</h3><span>May 2026 – Present · San Diego, CA</span></div>
+          <ul>
+            <li>Lead client projects end to end, from scoping and kickoff through delivery, managing timelines and presenting fire modeling results and mitigation recommendations to stakeholders.</li>
+            <li>Partner with sales as a sales engineer to optimize the pipeline, building custom demos, risk assessments, and tools that show prospects their wildfire risk.</li>
+            <li>Configure, run, and QA/QC Fire Pathways and XFM fire behavior simulations to generate burn probability, fire intensity, and ember exposure outputs used in mitigation planning.</li>
+            <li>Build custom geospatial tools using open-source and cloud-native technologies to automate the fire modeling pipeline.</li>
+            <li>Collaborate with software engineers and fire scientists on model development, data standards, and internal tools, contributing pull requests and participating in code review.</li>
+          </ul>
+        </article>
+        <article class="resume-entry">
+          <div class="resume-entry-heading"><h3>GIS Analyst · Chen Ryan Associates</h3><span>September 2025 – March 2026 · San Diego, CA</span></div>
+          <ul><li>Conducted GIS management, QA/QC, and mapping/web applications for General Plan Updates, Safe Routes to School, and transportation planning projects across Southern California.</li></ul>
+        </article>
+        <article class="resume-entry">
+          <div class="resume-entry-heading"><h3>Graduate Research Assistant · San Diego State University</h3><span>August 2023 – June 2025 · San Diego, CA</span></div>
+          <ul>
+            <li>Collaborated with The Nature Conservancy ecologists and NASA researchers on field-calibrating and validating hyperspectral imagery and UAV LiDAR to monitor residual dry matter across California rangelands for grazing and wildfire fuels management at Dawson Los Monos Canyon Reserve and Jack &amp; Laura Dangermond Preserve. This project led to a <a href="https://doi.org/10.3390/rs17142352" target="_blank" rel="noreferrer">peer-reviewed publication in Remote Sensing</a>.</li>
+            <li>Served as President of the American Society of Photogrammetry and Remote Sensing (ASPRS) and led the acquisition of over $50,000 in grant funds to support student-professional networking activities in geospatial and environmental research.</li>
+          </ul>
+        </article>
+        <article class="resume-entry">
+          <div class="resume-entry-heading"><h3>Natural Resources Management Intern (GIS) · City of San Diego</h3><span>May – August 2024 · San Diego, CA</span></div>
+          <ul><li>Supported the San Diego Management and Monitoring Program with rare plant Inspect and Manage field surveys and ESRI ArcGIS Enterprise database management across Open Space properties.</li></ul>
+        </article>
+        <article class="resume-entry">
+          <div class="resume-entry-heading"><h3>Research Fellow · National Center for Sustainable Transportation</h3><span>June – September 2022 · Davis, CA</span></div>
+          <ul><li>Collaborated with scientists at UC Davis and Universidad Complutense de Madrid to study impacts of traffic noise and light on mountain lion (<i>Puma concolor</i>) movement, managing camera traps, wildlife databases, and geospatial visualization at remote field sites.</li></ul>
+        </article>
+        <article class="resume-entry">
+          <div class="resume-entry-heading"><h3>Seasonal GIS Analyst · San Dieguito River Park JPA</h3><span>December 2020 – August 2021 · San Diego, CA</span></div>
+          <ul>
+            <li>Mapped <i>Arundo donax</i> in the park with UAV imagery to determine invasive species spread after 2010–2012 treatment by the California Invasive Plant Council.</li>
+            <li>Initiated and completed burn scar analysis from the 2007 Witch Creek fire using satellite imagery to understand wildfire spatial patterns and impacts on native vegetation.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="panel resume-section">
+        <h2>Education</h2>
+        <article class="resume-entry">
+          <div class="resume-entry-heading"><h3>M.S. in Geography · San Diego State University</h3><span>2023 – 2025</span></div>
+          <p>Concentration: GIScience and Remote Sensing</p>
+          <p>Thesis: Estimating Residual Dry Matter across Conservation Grazing Lands with Field Spectroscopy and UAV LiDAR</p>
+          <p>Activities: American Society for Photogrammetry and Remote Sensing President (2024–25)</p>
+        </article>
+        <article class="resume-entry">
+          <div class="resume-entry-heading"><h3>B.S. in Conservation Biology · University of California, Davis</h3><span>2018 – 2022</span></div>
+          <p>Minor: Geographic Information Systems</p>
+          <p>Activities: The Wildlife Society Chapter Representative (2019–2022)</p>
+        </article>
+      </section>
+
+      <section class="panel resume-section">
+        <h2>Technical Skills</h2>
+        <p><strong>Project Management &amp; Sales:</strong> Client project leadership from scoping through delivery, stakeholder presentations, sales engineering, custom demos for prospects, sales pipeline optimization.</p>
+        <p><strong>Programming &amp; Wildfire Modeling:</strong> Open-source Python stack (GeoPandas, Rasterio, Shapely, GDAL/OGR, DuckDB), cloud-native formats (GeoParquet, COG), SQL, Git, JavaScript; running open- and closed-source wildfire models, LANDFIRE (FBFM40, EVT, CBH).</p>
+        <p><strong>GIS &amp; Spatial Software:</strong> QGIS, ESRI Suite (ArcGIS Pro, Field Maps, Experience Builder), ENVI, Google Earth Engine, LP360, LAStools, TransCAD.</p>
+        <p><strong>Remote Sensing:</strong> UAV operating and imaging, photogrammetry, UAV LiDAR, imaging spectroscopy, satellite imagery acquisition and processing.</p>
+        <p><strong>Certifications:</strong> FAA Part 107 Certified Drone Pilot; S-190 Introduction to Wildland Fire Behavior; Using Spatial Data in AI Workflows (LinkedIn); AI Fluency (Anthropic); IT Automation with Python (Google).</p>
+      </section>
+
+      <section class="panel resume-section resume-extras">
+        <div><h2>Awards &amp; Honors</h2><p>SDSU Master’s Research Scholarship, McFarland Geography Scholarship, Richard Wright Award in Cartography, Pitt Virginia Warner Endowed Scholarship, and William and Vivian Finch Scholarship in Remote Sensing (2024); Oren Pollak Memorial Research Fund, The Nature Conservancy (2023); National Center for Sustainable Transportation Research Fellow (2022).</p></div>
+        <div><h2>Languages</h2><p>English, Russian (heritage), Spanish (elementary).</p></div>
+      </section>
+      <p class="small resume-download"><a class="resume-link" href="resume/markman_resume_2026.pdf" download>Download resume PDF</a></p>
     </section>
   </main>
 
