@@ -238,6 +238,12 @@ p {
   text-align: right;
 }
 
+.resume-entry-heading .resume-employer {
+  font-size: 0.88rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
 .resume-section ul {
   padding-left: 1.25rem;
   color: var(--muted);
@@ -581,6 +587,10 @@ p {
 
   .resume-entry-heading span {
     text-align: left;
+  }
+
+  .resume-entry-heading .resume-employer {
+    white-space: normal;
   }
 
   .resume-extras {
